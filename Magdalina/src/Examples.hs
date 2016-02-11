@@ -12,9 +12,11 @@ add :: (Int, Int) -> Int
 add (x, y) = x + y
 -}
 
-add:: Int -> Int -> Int
+add :: Int -> Int -> Int
 add x y = x+y
 
+mult :: Int -> Int -> Int ->Int
+mult x y z = x*y*z
 
 max3 :: Int -> Int -> Int ->Int
 max3 x y z
@@ -25,8 +27,8 @@ max3 x y z
 {-
 fact :: Int -> Int
 fact n
-    | n == 1 = 1
-    | n > 1 = n*fact(n-1)
+    | n == 0 = 1
+    | n > 1  = n*fact(n-1)
 -}
 
 {-
@@ -103,5 +105,7 @@ qsort (x:xs) = qsort less ++ [x] ++ qsort more
      where less = filter (<x) xs
            more = filter (>=x) xs
 
+square :: Int -> Int
+square x = x*x
 
 
